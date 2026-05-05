@@ -1,0 +1,12 @@
+-e .
+nibabel
+numpy
+opencv-python
+pandas
+pyarrow
+pyodbc
+python-dotenv
+torch
+torchvision
+tqdm
+wandb
