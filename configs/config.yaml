@@ -1,0 +1,9 @@
+scanlist: data/scanlist.csv
+diagnosis_col: diagnosis
+test_data_path: data/test_data
+seg_data_path: data/seg_data
+output_data_path: data/output
+segmap: configs/fastsurfer_atlas_map.csv
+test_model: data/models/model.pth
+benchmark_model: data/models/benchmark_model.pth #Optional for testing against
+subgroup_axis: ['sex','age_group']

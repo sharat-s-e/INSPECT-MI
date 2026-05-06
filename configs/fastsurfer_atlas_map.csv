@@ -1,0 +1,97 @@
+Key,Location
+0,Background
+2,Left Cerebral White Matter
+4,Left Lateral Ventricle
+5,Left Inf-Lat-Vent
+7,Left Cerebellum White Matter
+8,Left Cerebellum Cortex
+10,Left Thalamus Proper
+11,Left Caudate
+12,Left Putamen
+13,Left Pallidum
+14,3rd Ventricle
+15,4th Ventricle
+16,Brain-Stem
+17,Left Hippocampus
+18,Left Amygdala
+24,CSF
+26,Left Accumbens area
+28,Left Ventral DC
+31,Left Choroid Plexus
+41,Right Cerebral White Matter
+43,Right Lateral Ventricle
+44,Right Inf-Lat-Vent
+46,Right Cerebellum White Matter
+47,Right Cerebellum Cortex
+49,Right Thalamus Proper
+50,Right Caudate
+51,Right Putamen
+52,Right Pallidum
+53,Right Hippocampus
+54,Right Amygdala
+58,Right Accumbens area
+60,Right Ventral DC
+63,Right Choroid Plexus
+77,WM-hypointensities
+1002,Left Caudal Middle Frontal
+1003,Left Caudal Anterior Cingulate
+1005,Left Cuneus
+1006,Left Entorhinal
+1007,Left Fusiform
+1008,Left Inferior Parietal
+1009,Left Inferior Temporal
+1010,Left Isthmus Cingulate
+1011,Left Lateral Occipital
+1012,Left Lateral Orbitofrontal
+1013,Left Lingual
+1014,Left Medial Orbitofrontal
+1015,Left Middle Temporal
+1016,Left Parahippocampal
+1017,Left Paracentral
+1018,Left Pars Opercularis
+1019,Left Pars Orbitalis
+1020,Left Pars Triangularis
+1021,Left Pericalcarine
+1022,Left Postcentral
+1023,Left Posterior Cingulate
+1024,Left Precentral
+1025,Left Precuneus
+1026,Left Rostral Anterior Cingulate
+1027,Left Rostral Middle Frontal
+1028,Left Superior Parietal
+1029,Left Superior Temporal
+1030,Left Supramarginal
+1031,Left Frontal Pole
+1034,Left Transverse Temporal
+1035,Left Insula
+2002,Right Caudal Middle Frontal
+2003,Right Caudal Anterior Cingulate
+2005,Right Cuneus
+2006,Right Entorhinal
+2007,Right Fusiform
+2008,Right Inferior Parietal
+2009,Right Inferior Temporal
+2010,Right Isthmus Cingulate
+2011,Right Lateral Occipital
+2012,Right Lateral Orbitofrontal
+2013,Right Lingual
+2014,Right Medial Orbitofrontal
+2015,Right Middle Temporal
+2016,Right Parahippocampal
+2017,Right Paracentral
+2018,Right Pars Opercularis
+2019,Right Pars Orbitalis
+2020,Right Pars Triangularis
+2021,Right Pericalcarine
+2022,Right Postcentral
+2023,Right Posterior Cingulate
+2024,Right Precentral
+2025,Right Precuneus
+2026,Right Rostral Anterior Cingulate
+2027,Right Rostral Middle Frontal
+2028,Right Superior Parietal
+2029,Right Superior Temporal
+2030,Right Supramarginal
+2031,Right Frontal Pole
+2034,Right Transverse Temporal
+2035,Right Insula
