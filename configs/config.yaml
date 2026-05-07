@@ -1,12 +1,15 @@
-scanlist: ../test_scanlist.csv #data/scanlist.csv
-test_data_path: data/test_data
-seg_data_path: data/seg_data
-output_data_path: data/output
-segmap: configs/fastsurfer_atlas_map.csv
-atlas_locs: [17,53,18,54] #17-Left_Hippocampus, 53-Right_Hippocampus, 18-Left_Amygdala , 54-Right_Amygdala
-model: densenet3d121 # choices: cnn3d, resnet3d10, resnet3d18, densenet3d121
-test_model: data/models/test_model.pth
-benchmark_model: data/models/benchmark_model.pth #Optional for testing against
-subgroup_axis: ['sex','age_group']
-diagnosis_dict: {'hc': 0, 'ad': 1}
-batch_size: 10
+path_params:
+  scanlist_path: data/scanlist.csv #Scanlist containing input file name, segmentation file name and demographic information 
+  test_data_path: data/test_data #Path for input test data
+  seg_data_path: data/seg_data #Path for test data segmentation maps
+  output_dir: data/output #Path for framework output generation
+atlas_params:
+  atlas_map: configs/fastsurfer_atlas_map.csv #Index to location mapping csv as per Fastsurfer
+  atlas_locs: [17,53,18,54] #Indices to be considered for TSS computation | 17-Left_Hippocampus, 53-Right_Hippocampus, 18-Left_Amygdala , 54-Right_Amygdala
+model_params:
+  model: densenet3d121 #Model selection | choices: cnn3d, resnet3d10, resnet3d18, densenet3d121
+  test_model: data/models/test_model.pth #Test modeel weight location
+eval_params:
+  diagnosis_dict: {'hc': 0, 'ad': 1} #Class label mapping
+  batch_size: 10 #Batch size for evaluation
+  subgroup_axis: ['sex','age_group'] #Evaluation axes

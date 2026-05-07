@@ -1,13 +1,13 @@
--e .
-yaml
-nibabel
-numpy
-opencv-python
-pandas
-pyarrow
-pyodbc
-python-dotenv
-torch
-torchvision
-tqdm
-wandb
+matplotlib==3.10.9
+monai==1.5.1
+nibabel==5.4.2
+numpy==2.4.4
+nvidia_ml_py==12.575.51
+pandas==3.0.2
+pynvml==12.0.0
+PyYAML==6.0.3
+scikit_learn==1.8.0
+scipy==1.17.1
+seaborn==0.13.2
+torch==2.7.1
+torchinfo==1.8.0

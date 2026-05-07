@@ -14,31 +14,40 @@ INSPECT-MI evaluates bias across three complementary dimensions:
 ```
 INSPECT-MI/
 │── src/
-│ │── evaluate.py # Main evaluation pipeline
+│ │── evaluate.py # Model evaluation pipeline
 │ │── models/
+│ │ ├── __init__.py # Wrapper for model selection
 │ │ ├── densenet3d.py # DenseNet3D architecture
 │ │ ├── resnet3d.py # ResNet3D architecture
 │ │ └── cnn3d.py # Custom CNN model
 │ └── utils/
 │   ├── data_loader.py # Dataset loading utilities
-│   ├── data_utils.py # Preprocessing helpers
+│   ├── data_utils.py # Data preprocessing helpers
+│   ├── gpu_utils.py # GPU utilization helpers
 │   └── visualize.py # Visualization and plotting
 │── data/
-│ ├── scanlist.csv # scanlist file contatining demographic information
-│ ├── test_data # test dataset
-│ └── models # test and benchmark models
-│
+│ ├── scanlist.csv # Scanlist file containing demographic information
+│ ├── test_data # Test dataset
+│ ├── seg_data # Segmentation maps of test dataset
+│ ├── models # Test model weights
+│ └── output # Execution outputs
 │── configs/
-│ └── config.yaml # Configuration file
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment
-│
+│ ├── config.yaml # Configuration file template for execution
+│ └── fastsurfer_atlas_map.csv # Fastsurfer atlas index-location mapping file
+├── requirements.txt # The requirements file for reproducing the analysis environment
+│── run_inspectmi.py # Main execution file
+│── pyproject.toml
 └── README.md
 ```
 
 ## ▶️ How to Use
-1. Configure settings - Edit configs/config.yaml
-2. Run evaluation
+1. Install requirements => pip install -r requirements.txt
+2. Keep test data in data/test_data
+3. Keep confromed segmentation maps in data/seg_data
+4. Keep test model weights in data/models
+5. Keep scanlist file in data/scanlist.csv
+6. Update configuration file - configs/config.yaml
+7. Run evaluation => python run_inspectmi.py --config configs/config.yaml
 
 ## 📊 Outputs
 The framework generates:
@@ -50,10 +59,6 @@ The framework generates:
 - 🧠 Interpretability
   ROI-wise saliency scores (hippocampus, amygdala)
   Total Saliency Score (TSS)
-- 🔁 Benchmark Comparison (if provided)
-  Performance degradation vs benchmark
-  Bias difference vs benchmark
-  TSS comparison
 
 ## 📌 Notes
 - Saliency is computed using ROI occlusion based on FastSurfer segmentations.
@@ -63,9 +68,9 @@ The framework generates:
 ## 🔧 Extending the Framework
 You can:
 - Add new models in models/
-- Extend metrics in evaluate.py
-- Add new ROIs for saliency analysis
-- Integrate additional demographic variables
+- Extend evaluation metrics in evaluate.py
+- Add new ROIs for saliency analysis in config.yaml
+- Integrate additional demographic variables in config.yaml
 
 ## 📝 License
 For academic and non-commercial use only. Contact the author for collaboration or reuse.
