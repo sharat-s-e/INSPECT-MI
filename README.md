@@ -43,7 +43,7 @@ INSPECT-MI/
 ## ▶️ How to Use
 1. Install requirements => pip install -r requirements.txt
 2. Keep test data in data/test_data
-3. Keep confromed segmentation maps in data/seg_data
+3. Keep conformed segmentation maps in data/seg_data
 4. Keep test model weights in data/models
 5. Keep scanlist file in data/scanlist.csv
 6. Update configuration file - configs/config.yaml
